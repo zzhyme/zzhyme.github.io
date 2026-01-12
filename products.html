@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to the Products of Likha Vintage Paper!</title>
+         <link rel="stylesheet" href="productstyle.css">
+    </head>
+
+    <body> 
+        <a href="index.html" target="_blank">
+            <button class="btn1">Go back to the Main page</button></a>
+       
+        <img src="paperbg.mp4" class = "img1" alt="Flying paper Birds">
+      
+        <h1>Eco-friendly vintage paper <br> now available!</h1>
+         <h2>Available now in limited quantities, grab yours before it is too late!</h2>
+          
+         <nav class="bar">
+                <ul>
+                    <li><a href="about.html">About  .</a></li>
+                    <li><a href="products.html">Products  .</a></li>
+                    <li><a href="contact.html">Contact  .</a></li>
+                </ul>
+            </nav>
+
+            <div class="container">
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="What are you looking for?">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+         <main>
+           <h3>The Likha Vintage Paper</h3>
+                <p class="info">At Likha, we turn simple materials into meaningful creations. The vintage papers are handmade from garlic skins, blending sustainability, creativity, and nostalgia. 
+                Each piece reflects the beauty of old style papers sealed with wax, and designed to make every purchase feel personal and timeless. Likha is not just a paper; it is a reminder that art, 
+                care, and history can live in every creation.</p>
+
+                <div class="product-container">
+                    <div class="product1">
+                        <img src="product1.png" class="photo">
+                            <p class = "name">There are ten pieces of Likha Vintage Paper <br> in a premium pack with garlic paper envelope. <br> You may only buy and inquire about the <br> product through contact.</p>
+                </div> 
+
+                    <div class="product2">
+                        <img src="product2.png" class="photo">
+                            <p class = "name">There are five pieces of Likha Vintage Paper <br> in a normal pack with garlic paper envelope. <br> You may only buy and inquire about the <br> product through contact.</p>
+                    </div>
+                </div>
+
+            <h4>The Revealed Secrets of Likha's <br> Meaningful Creations</h4> 
+                <ul class="list">
+                    <li>It is Made from garlic wrappers. It is co-friendly, sustainable, and creatively repurposed.</li>
+                    <li>Handcrafted with care. Each sheet is unique, giving an authentic vintage texture.</li>
+                    <li>Old mail inspired packaging thatsealed with wax for a timeless, nostalgic touch.</li>
+                    <li>Perfect for journaling, scrapbooks, art projects, home décor, school designs, and more.</li>
+                    <li>Locally made and proudly crafted with love and creativity from the Philippines.</li>
+                    <li>It adds charm anywhere that are perfect for your home, workspace, or personal projects.</li>
+                    <li>Lastly, if you are curious about how the Likha Vintage Paper are made, you may go back to the "About" page wherein it is included in the research.</li>
+                </ul>
+
+            <h5>THE FUTURE IS COMING!</h5>
+                <video class = "img2" autoplay muted loop playsinline><source src="future.mp4" type="video/mp4" alt="Soon for Likha Vintage Paper"></video>
+                    <p class="des">Kindly stay tuned in the Social Media of Ms. Jamirah. <br> Thank you so much :> (Please refer in the Contact page)</p>
+
+            <script>
+                document.getElementById("searchForm").addEventListener("submit", function(e) {e.preventDefault();
+                let keyword = document.getElementById("searchInput").value.toLowerCase();
+
+                if (keyword.includes("about") || keyword.includes("business") || keyword.includes("history")) {
+                window.location.href = "about.html";
+                }
+                else if (keyword.includes("product") || keyword.includes("pieces") || keyword.includes("pesos")) {
+                window.location.href = "products.html";
+                }
+                else if (keyword.includes("contact") || keyword.includes("message") || keyword.includes("email")) {
+                window.location.href = "contact.html";
+                }
+                else if (keyword.includes("front page") || keyword.includes("business") || keyword.includes("main")) {
+                window.location.href = "frontpage.html";
+                }
+                else {
+                alert("No found :(");
+                }
+            });
+        </script>
+      </main>               
+    </body> 
+</html>

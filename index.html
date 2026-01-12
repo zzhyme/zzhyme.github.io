@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Likha Vintage Paper!</title>
+         <link rel="stylesheet" href="frontstyle.css">
+    </head>
+
+    <body> 
+        <img src="paperbg.mp4" class="img1">
+
+        <h1>Likha Vintage Paper</h1>
+       
+         <h2>Timeless Paper for your projects, journals, and creative designs</h2>
+          
+         <nav class="bar">
+                <ul>
+                    <li><a href="about.html">About .</a></li>
+                    <li><a href="products.html">Products .</a></li>
+                    <li><a href="contact.html">Contact .</a></li>
+                </ul>
+            </nav>
+
+            <div class="container">
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Hi, Good day! What are you looking for?">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+         <main>
+           <h3>Hashtag: A New Wave of <br> Creativity and Sustainability.</h3>
+            <p class = "intro">It has arrived! Ms. Jamirah Nicole G. Bolledo a local artisan and founder of Likha Vintage Paper, has introduced a unique line of vintage papers 
+                craft projects made from garlic skins. Each sheet is carefully handcrafted to achieve an old-fashioned, elegant look, perfect for scrapbooking, and journaling. 
+                Ms. Jamirah shares, “I wanted every customer to feel a touch of nostalgia and authenticity while supporting eco-friendly craftsmanship.”</p>
+                <video class = "img2" controls autoplay><source src="vintage.mp4" type="video/mp4" alt="Original Video of Vintage Paper by Ms. Jamirah"></video> 
+
+             <h4>The Future is in The Likha!</h4>  
+              <p class = "info">According to Salik, et al., 2024 from a research (Garlic Peel as an Alternative Making Paper), a garlic peel can be a good sustainable paper, 
+                it has various advantages. Firstly, it is a sustainable and eco-friendly option. It reduces the demand for traditional paper products made from wood, helping to 
+                conserve forests and reduce deforestration. Not only it can benefit the environement by reducing deforestration and promoting sustainability. It can also benefit 
+                local communities by providing them with an additional source of income as they can sell or use the garlic peel for paper production. Furthermore, it can also benefit 
+                artists and crafters as they can use the garlic paper for various projects, adding a distinct aesthetic value through its unique texture and color.
+                
+               <p class="info1">The Likha Vintage Paper is just starting but the key for a good paper industry and good future of the environment is here and coming!
+                </p>
+
+                  <img src="p.jpg" class = "img3" alt="The future: Likha Vintage Paper" style="width:35%">
+
+            <script>
+                document.getElementById("searchForm").addEventListener("submit", function(e) {e.preventDefault();
+                let keyword = document.getElementById("searchInput").value.toLowerCase();
+
+                if (keyword.includes("about") || keyword.includes("business") || keyword.includes("history")) {
+                window.location.href = "about.html";
+                }
+                else if (keyword.includes("product") || keyword.includes("pieces") || keyword.includes("pesos")) {
+                window.location.href = "products.html";
+                }
+                else if (keyword.includes("contact") || keyword.includes("message") || keyword.includes("email")) {
+                window.location.href = "contact.html";
+                }
+                else if (keyword.includes("front page") || keyword.includes("business") || keyword.includes("main")) {
+                window.location.href = "frontpage.html";
+                }
+                else {
+                alert("No found :(");
+                }
+            });
+        </script>
+      </main>               
+    </body> 
+</html>

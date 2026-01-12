@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About The Likha Vintage Paper</title>
+        <link rel="stylesheet" href="aboutstyle.css">
+    </head>
+
+    <body> 
+        <a href="index.html" target="_blank">
+            <button class="btn1">Go back to the Main page</button></a>
+        
+        <img src="paperbg.mp4" class = "img1" alt="Flying paper Birds">
+      
+        <h1>FACTS AND TRIVIAS</h1>
+       
+         <h2>The things you should know about the Likha Vintage Paper.</h2>
+          
+         <nav class="bar">
+                <ul>
+                    <li><a href="about.html">About .</a></li>
+                    <li><a href="products.html">Products .</a></li>
+                    <li><a href="contact.html">Contact .</a></li>
+                </ul>
+            </nav>
+
+            <div class="container">
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Hi, Good day! What are you looking for?">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+         <main>
+           <h3>Hashtag: The Vintage History</h3>
+            <p class = "intro">Ms. Jamirah developed her small business, because she was inspired of her sister, Ms. Mary Jaymella Zhyme G. Bolledo who have action research paper from
+                 Senior High School, this research was defended in year April 2025, titled "Use of Garlic and Onion Paper in Addressing Waste Management Problems". 
+                 Ms. Jamirah said that "Gusto kong gawing buhay 'yung mga totoong information at evidences sa isang research paper ng sister ko, na pwedeng-pwede 
+                 talagang magamit ng bawat isa para sa ating kalikasan. She wants to apply in real-life present and future the factual information and evidences 
+                 in her sister's research that may be used by every individual for the environment. According to them, they both have purpose to serve sustainability 
+                 and good products, for the sake of the environment and people who live in it.<br><br> 
+                 “Never start a business to make money. Start a business to make a difference.”<br>-Marie Forleo</p>
+
+            <div class="team-container">
+                <div class="leader">
+                    <img src="founder.png" class="photo">
+                     <p class = "name">Founder: <br> Ms. Jamirah Nicole Galing Bolledo</p>
+                </div> 
+
+                 <div class="mem">
+                    <img src="researcher.jpg" class="photo">
+                    <p class = "name">Researcher/Web Designer/Developer:<br>Ms. Mary Jaymella Zhyme Galing Bolledo</p>
+                </div>
+            </div>
+
+            <iframe src="research.pdf" class="pdf"></iframe>
+                <p class = "research">The Research</p>
+
+             <h4>The Inspiration for everyone</h4>
+                <div class="logo">
+                    <img src="logo.png" class="lo">
+                </div>
+            </div>  
+
+              <p class = "info">According to Ms. Jamirah Nicole Bolledo her logo features her business name, “Likha,” which means “to create” or “creation”, representing the creativity, effort, and artistry that go into every handmade vintage paper she makes.
+                The design shows an old envelope sealed with wax and marked with her initial "J" for Jamirah. It reflects what receive customers when they buy her product, each order feels like opening a mail letter. There's also a garlic element in the 
+                logo to show that the papers are made from garlic skins, highlighting their unique and eco-friendly origin.
+                <br><br>
+                All dreams can come true, if we have the courage to pursue them.<br>-Walt Disney
+                </p>
+
+            <script>
+                document.getElementById("searchForm").addEventListener("submit", function(e) {e.preventDefault();
+                let keyword = document.getElementById("searchInput").value.toLowerCase();
+
+                if (keyword.includes("about") || keyword.includes("business") || keyword.includes("history")) {
+                window.location.href = "about.html";
+                }
+                else if (keyword.includes("product") || keyword.includes("pieces") || keyword.includes("pesos")) {
+                window.location.href = "products.html";
+                }
+                else if (keyword.includes("contact") || keyword.includes("message") || keyword.includes("email")) {
+                window.location.href = "contact.html";
+                }
+                else if (keyword.includes("front page") || keyword.includes("business") || keyword.includes("main")) {
+                window.location.href = "frontpage.html";
+                }
+                else {
+                alert("No found :(");
+                }
+            });
+        </script>
+      </main>               
+    </body> 
+</html>
